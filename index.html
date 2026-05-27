@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artist Statement</title>
+    <style>
+        body {
+            max-width: 680px;
+            margin: 80px auto;
+            padding: 0 24px 80px;
+            font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fafaf7;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: normal;
+            letter-spacing: 0.02em;
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #ccc;
+        }
+        p {
+            margin: 0 0 1.4em;
+            text-align: justify;
+            hyphens: auto;
+        }
+        p:first-of-type::first-letter {
+            font-size: 3.2em;
+            float: left;
+            line-height: 0.9;
+            margin: 0.05em 0.08em 0 0;
+        }
+    </style>
 </head>
 <body>
- Howdy, world!
+    <h1>Artist Statement</h1>
+
+    <p>Color in illustration is rarely just a matter of selecting individual hues. When studying a reference image for its palette, the biggest challenge lies in understanding how its colors function as a whole: how much visual weight each color carries, what atmosphere they collectively produce, and how that dynamic might be translated into one's own work. A palette lifted from one image and bluntly dropped into another tends to fall flat because the delicate interactions that produce its specific atmosphere have not been properly considered. Color relationships are not portable by default, so illustrators often have to rely on instinct and estimation. I built Palette Mirror to assist me in engaging with this problem.</p>
+
+    <p>At its core, Palette Mirror is about borrowing atmosphere and asking what an illustration might become if its colors were reimagined through the logic of another image. It works by extracting the dominant colors from a reference image, along with the proportional weight each color carries within the composition, then mapping them onto a target image through one of three approaches: a proportional mode that follows the compositional logic of the reference directly, a nearest-color mode that matches colors by proximity, and a random mode that generates a different result each time. Each mode produces a different kind of translation, offering a set of possibilities for the user to evaluate, reject, or build from.</p>
+
+    <p>Palette Mirror only seeks to fulfill one specific function, and makes no creative judgments of its own. This limitation is intentional. I wanted to make a tool that is strictly a tool — precise, controllable, and contained enough to supplement my creative process without hijacking it. One saying from the course that really stuck with me is: "automate the things you don't want to do at your own cost," which I think is especially worth considering when working with AI. Efficiency rarely comes at no cost; in the context of illustration, the expense is often paid in uniqueness, creative agency, and personal voice.</p>
+
+    <p>What I wanted to automate was the arithmetic: counting pixels, computing proportions, and performing the mechanical legwork of color analysis that has nothing interpretive about it. Palette Mirror does that and stops there. It hands me organized color information from the reference image of my choice and a set of candidates to react to, then leaves everything else to me.</p>
 </body>
 </html>
